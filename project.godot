@@ -1,0 +1,63 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "AnchorToken",
+"language": "GDScript",
+"path": "res://Scripts/AnchorToken.gd"
+}, {
+"base": "Node",
+"class": "Edge",
+"language": "GDScript",
+"path": "res://Scripts/Edge.gd"
+}, {
+"base": "Node",
+"class": "OutputObject",
+"language": "GDScript",
+"path": "res://Scripts/OutputObject.gd"
+}, {
+"base": "Node",
+"class": "Place",
+"language": "GDScript",
+"path": "res://Scripts/Place.gd"
+}, {
+"base": "Node",
+"class": "Token",
+"language": "GDScript",
+"path": "res://Scripts/Token.gd"
+}, {
+"base": "Node",
+"class": "Transition",
+"language": "GDScript",
+"path": "res://Scripts/Transition.gd"
+} ]
+_global_script_class_icons={
+"AnchorToken": "",
+"Edge": "",
+"OutputObject": "",
+"Place": "",
+"Token": "",
+"Transition": ""
+}
+
+[application]
+
+config/name="StreetGen"
+config/icon="res://icon.png"
+
+[physics]
+
+2d/default_gravity=0
+2d/default_gravity_vector=Vector2( 0, 0 )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
