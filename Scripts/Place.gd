@@ -10,7 +10,7 @@ var tokens: Array
 func _init():
 	self.tokens = []
 	
-func put_token(token: PlaceToken):
+func put_token(token: AnchorToken):
 	self.tokens.append(token)
 	
 func put_tokens(tokens: Array):

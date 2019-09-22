@@ -8,3 +8,11 @@ script = ExtResource( 1 )
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2( 75, 125 )
 current = true
+
+[node name="Score" type="Label" parent="."]
+margin_left = -424.437
+margin_top = -161.885
+margin_right = -139.437
+margin_bottom = -106.885
+text = "Score: 0
+"
