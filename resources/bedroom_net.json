@@ -1,0 +1,96 @@
+{
+	"pages": [
+		{
+			"name": "bedroom",
+			"tokens": [
+				{"name": "TOKEN_BED", "type": "WALL", "pos": []},
+				{"name": "TOKEN_CLOSET", "type": "CORNER", "pos": []}
+			],
+			"objects": [
+				{ "name": "OBJ_BED" },
+				{ "name": "OBJ_CLOSET" }
+			],
+			"places": [
+				{ "name": "START", "tokens": [ ] },
+				{ "name": "P_BED", "tokens": [ "TOKEN_BED" ] },
+				{ "name": "P_CLOSET", "tokens": [ "TOKEN_CLOSET" ] }
+			],
+			"transitions": [
+				{"name": "TRANS_BED", "probability": 1.0, "pairs": [
+					{"from": "START", "to": "OBJ_BED", "type": "WALL", "sdp": 0.0, "sda": 0.0},
+					{"from": "P_BED", "to": "NONE", "type": "ANY", "sdp": 0.0, "sda": 0.0}
+				]},
+				{"name": "TRANS_CLOSET", "probability": 1.0, "pairs": [
+					{"from": "START", "to": "OBJ_CLOSET", "type": "CORNER", "sdp": 0.0, "sda": 0.0},
+					{"from": "P_CLOSET", "to": "NONE", "type": "ANY", "sdp": 0.0, "sda": 0.0}
+				]}
+			]
+		},
+		{
+			"name": "bathroom",
+			"tokens": [
+				{"name": "TOKEN_BATHTUB", "type": "CORNER", "pos": []},
+				{"name": "TOKEN_TOILET", "type": "WALL", "pos": []}
+			],
+			"objects": [
+				{ "name": "OBJ_TOILET" },
+				{ "name": "OBJ_BATHTUB" }
+			],
+			"places": [
+				{ "name": "START", "tokens": [ ] },
+				{ "name": "P_TOILET", "tokens": [ "TOKEN_TOILET" ] },
+				{ "name": "P_BATHTUB", "tokens": [ "TOKEN_BATHTUB" ] }
+			],
+			"transitions": [
+				{"name": "TRANS_TOILET", "probability": 1.0, "pairs": [
+					{"from": "START", "to": "OBJ_TOILET", "type": "WALL", "sdp": 0.0, "sda": 0.0},
+					{"from": "P_TOILET", "to": "NONE", "type": "ANY", "sdp": 0.0, "sda": 0.0}
+				]},
+				{"name": "TRANS_BATHTUB", "probability": 1.0, "pairs": [
+					{"from": "START", "to": "OBJ_BATHTUB", "type": "CORNER", "sdp": 0.0, "sda": 0.0},
+					{"from": "P_BATHTUB", "to": "NONE", "type": "ANY", "sdp": 0.0, "sda": 0.0}
+				]}
+			]
+		},
+		{
+			"name": "living",
+			"tokens": [
+				{"name": "TOKEN_TABLE", "type": "OPEN", "pos": []}
+			],
+			"objects": [
+				{ "name": "OBJ_TABLE" }
+			],
+			"places": [
+				{ "name": "START", "tokens": [ ] },
+				{ "name": "P_TABLE", "tokens": [ "TOKEN_TABLE" ] }
+			],
+			"transitions": [
+				{"name": "TRANS_TABLE", "probability": 1.0, "pairs": [
+					{"from": "START", "to": "OBJ_TABLE", "type": "OPEN", "sdp": 0.0, "sda": 0.0},
+					{"from": "P_TABLE", "to": "NONE", "type": "ANY", "sdp": 0.0, "sda": 0.0}
+				]}
+			]
+
+		},
+		{
+			"name": "kitchen",
+			"tokens": [
+				{"name": "TOKEN_FRIDGE", "type": "CORNER", "pos": []}
+			],
+			"objects": [
+				{ "name": "OBJ_FRIDGE" }
+			],
+			"places": [
+				{ "name": "START", "tokens": [ ] },
+				{ "name": "P_FRIDGE", "tokens": [ "TOKEN_FRIDGE" ] }
+			],
+			"transitions": [
+				{"name": "TRANS_FRIDGE", "probability": 1.0, "pairs": [
+					{"from": "START", "to": "OBJ_FRIDGE", "type": "CORNER", "sdp": 0.0, "sda": 0.0},
+					{"from": "P_FRIDGE", "to": "NONE", "type": "ANY", "sdp": 0.0, "sda": 0.0}
+				]}
+			]
+
+		}
+	]
+}

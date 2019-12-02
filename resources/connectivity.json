@@ -1,0 +1,66 @@
+{
+	"outside": [
+		"kitchen",
+		"living"
+	],
+	"kitchen": [
+		"outside",
+		"pantry",
+		"laundry",
+		"living",
+		"dining"
+	],
+	"pantry": [
+		"kitchen",
+		"laundry"
+	],
+	"laundry": [
+		"kitchen",
+		"pantry"
+	],
+	"living": [
+		"outside",
+		"kitchen",
+		"dining",
+		"toilet",
+		"bedroom",
+		"master",
+		"bathroom",
+		"secondary"
+	],
+	"dining": [
+		"kitchen",
+		"living",
+		"toilet",
+		"bedroom",
+		"master",
+		"bathroom",
+		"secondary"
+	],
+	"toilet": [
+		"living",
+		"dining"
+	],
+	"bedroom": [
+		"living",
+		"dining",
+		"bathroom"
+	],
+	"master": [
+		"living",
+		"dining",
+		"bathroom"
+	],
+	"bathroom": [
+		"living",
+		"dining",
+		"bedroom",
+		"master",
+		"secondary"
+	],
+	"secondary": [
+		"living",
+		"dining",
+		"bathroom"
+	]
+}

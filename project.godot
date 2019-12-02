@@ -9,43 +9,19 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Node",
-"class": "AnchorToken",
+"base": "Node2D",
+"class": "ClutterGen",
 "language": "GDScript",
-"path": "res://Scripts/AnchorToken.gd"
+"path": "res://scripts/ClutterGen.gd"
 }, {
 "base": "Node",
-"class": "Edge",
+"class": "PetriNet",
 "language": "GDScript",
-"path": "res://Scripts/Edge.gd"
-}, {
-"base": "Node",
-"class": "OutputObject",
-"language": "GDScript",
-"path": "res://Scripts/OutputObject.gd"
-}, {
-"base": "Node",
-"class": "Place",
-"language": "GDScript",
-"path": "res://Scripts/Place.gd"
-}, {
-"base": "Node",
-"class": "Token",
-"language": "GDScript",
-"path": "res://Scripts/Token.gd"
-}, {
-"base": "Node",
-"class": "Transition",
-"language": "GDScript",
-"path": "res://Scripts/Transition.gd"
+"path": "res://scripts/PetriNet.gd"
 } ]
 _global_script_class_icons={
-"AnchorToken": "",
-"Edge": "",
-"OutputObject": "",
-"Place": "",
-"Token": "",
-"Transition": ""
+"ClutterGen": "",
+"PetriNet": ""
 }
 
 [application]
